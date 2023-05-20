@@ -1,5 +1,8 @@
+'use client'
+
 import { FC } from 'react'
 import Link from 'next/link'
+import SignInButton from '@components/SignInButton'
 
 const AppBar: FC = () => {
   return (
@@ -10,6 +13,7 @@ const AppBar: FC = () => {
       <Link className="transition-colors hover:text-blue-500" href="/user-post">
         User Post Page
       </Link>
+      <SignInButton />
     </header>
   )
 }
